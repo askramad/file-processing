@@ -17,5 +17,5 @@ public final class Constants {
     public static final String CONFIG_ES_SETTINGS_FILENAME = "es.index.settings.filename";
     public static final String CONFIG_ES_MAPPING_FILENAME = "es.index.mapping.filename";
 
-    public static final String CONFIG_CSV_PATH = "file.path";
+    public static final String CONFIG_FILE_PATH = "file.path";
 }

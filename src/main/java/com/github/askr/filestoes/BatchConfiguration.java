@@ -143,7 +143,7 @@ public class BatchConfiguration {
     @Bean
     public ItemReader<FileToES> reader() {
         FlatFileItemReader<FileToES> reader = new FlatFileItemReader<FileToES>();
-        reader.setResource(new ClassPathResource(environment.getProperty(Constants.CONFIG_CSV_PATH)));
+        reader.setResource(new ClassPathResource(environment.getProperty(Constants.CONFIG_FILE_PATH)));
         reader.setLinesToSkip(1);
         reader.setLineMapper(new DefaultLineMapper<FileToES>() {{
             setLineTokenizer(new DelimitedLineTokenizer(",") {{
